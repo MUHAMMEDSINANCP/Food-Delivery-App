@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../home/home_view.dart';
- 
+
 class OnboardingView extends StatefulWidget {
   const OnboardingView({super.key});
 
@@ -105,11 +105,13 @@ class _OnboardingViewState extends State<OnboardingView> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Text(
-                            infoObj["info"].toString(),
-                            textAlign: TextAlign.center,
-                            style: const TextStyle(
-                                color: Color(0xff939393), fontSize: 18),
+                          Expanded(
+                            child: Text(
+                              infoObj["info"].toString(),
+                              textAlign: TextAlign.center,
+                              style: const TextStyle(
+                                  color: Color(0xff939393), fontSize: 16),
+                            ),
                           ),
                         ],
                       ),
